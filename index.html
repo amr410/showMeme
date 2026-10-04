@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>showMeme</title>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-black">
+    <form>
+      <div class="container">
+        <div
+          class="row flex-column text-danger align-items-center gap-3 text-center py-5"
+        >
+          <h1 class="text-decoration-underline">Enter Number From 0 to 99</h1>
+          <input
+            data-search
+            type="text"
+            class="bg-danger p-0 w-auto text-light"
+          />
+
+          <button
+            data-submit
+            type="submit"
+            class="btn btn-danger text-warning w-auto"
+          >
+            Show Meme
+          </button>
+          <div data-meme class="container-fluid"></div>
+        </div>
+      </div>
+    </form>
+
+    <script src="index.js"></script>
+  </body>
+</html>
